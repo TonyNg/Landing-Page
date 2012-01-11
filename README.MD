@@ -1,1 +1,0 @@
-Testing first sinatra app.
