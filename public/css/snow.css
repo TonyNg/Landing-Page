@@ -69,8 +69,8 @@
 
 		/* Makes a snowflake fall from -50px to 650px pixels in the y-axis */
 		@-webkit-keyframes drop {
-			0%   { -webkit-transform: translate(0px, -50px); }
-			100% { -webkit-transform: translate(0px, 650px); }
+			0%   { -webkit-transform: translate(0px, -10px); }
+			100% { -webkit-transform: translate(0px, 680px); }
 		}
 
 		/* Rotates a snowflake from -50 to 50 degrees in 2D space */
