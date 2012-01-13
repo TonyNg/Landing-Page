@@ -50,17 +50,17 @@
 (function($){
 	$.snowfall = function(element, options){
 		var	defaults = {
-				flakeCount : 10,
+				flakeCount : 5,
 				flakeColor : '#ffffff',
 				flakeIndex: 999999,
 				minSize : 1,
 				maxSize : 3,
 				minSpeed : 1,
-				maxSpeed : 100,
+				maxSpeed : 15,
 				round : false,
 				shadow : false,
 				collection : false,
-				collectionHeight : 15
+				collectionHeight : 20
 			},
 			options = $.extend(defaults, options),
 			random = function random(min, max){
@@ -194,7 +194,7 @@
 								canvas = document.createElement('canvas'),
 								collisionData = [];
 
-							if(bounds.top-collectionHeight > 6){									
+							if(bounds.top-collectionHeight > 0){									
 								document.body.appendChild(canvas);
 								canvas.style.position = 'absolute';
 								canvas.height = collectionHeight;

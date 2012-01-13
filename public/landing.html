@@ -1,4 +1,4 @@
-<!doctype html>  
+<html>  
 <html lang="en" style="overflow:hidden;">  
 <head>  
   <meta charset="utf-8">  
@@ -14,11 +14,15 @@
 	<script src='snowfall.jquery.js'></script>
 	<script>
 	$(document).ready(function(){
-			$(document).snowfall();
+					$(document).snowfall('clear');
+					$(document).snowfall({collection : '.collectonme', flakeCount : 75});
 	});
 	</script>
 </head>  
 <body background="blackwood.png"> 
+	<div class="collectonme">
+		<p>------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+	</div>
 <div class="container">
 	<div> <a id="button" href="#">
 		<div id="switch">Play
