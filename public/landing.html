@@ -1,10 +1,8 @@
-<html>  
 <html lang="en" style="overflow:hidden;">  
 <head>  
   <meta charset="utf-8">  
   <title>Tony Ng</title>  
   <meta name="TonyNg">  
-  <link rel="stylesheet" href="css/snow.css">  
   <link rel="stylesheet" href="css/main.css">  
   <link rel="stylesheet" href="css/button.css">  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -14,16 +12,19 @@
 	<script src='snowfall.jquery.js'></script>
 	<script>
 	$(document).ready(function(){
-					$(document).snowfall('clear');
-					$(document).snowfall({collection : '.collectonme', flakeCount : 75});
+		$(document).snowfall();
+		$(document).snowfall({collection : '.collectonme', flakeCount : 160});
 	});
 	</script>
 </head>  
-<body background="blackwood.png"> 
+<body> 
 	<div class="collectonme">
-		<p>- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+    <p>
 	</div>
 <div class="container">
+<!-- snow collection on button <div>
+    <p class="collectonme">
+	</div> -->
 	<div> <a id="button" href="#">
 		<div id="switch">Play
 		</div>
@@ -34,17 +35,14 @@
 	<div style="position: relative; left: 0; top: 0;">
 		<h1><a href="http://tnt.heroku.com/" target="_blank">Tony Ng</a></h1>
 		<h1><a href="http://www.twitter.com/tonynggg" target="_blank">@TonyNggg</a></h1>		
-	<!--  <img src="city.png" width="900px" style="position: relative; top: 500px; left: 0;"/> -->
-	<!--  <img src="tony.png" style="position: absolute; top: 30; left: 600px;"/> -->
 		<div class="scroll" style="position: absolute; top: 10px; left: 580px;">
-	<p>Hello!<br/></p>
+	<p>Hello!</p>
 		</div>
 	</div>
 </div> <!-- close container -->
-
 <audio id="audio">
-  <source src="audio/Your_Hand_In_Mine.ogg" type="audio/ogg" />
-  <source src="audio/Your_Hand_In_Mine.mp3" type="audio/mpeg" />
+  <source src="audio/Your_Hand_In_Mine_Short.ogg" type="audio/ogg" />
+  <source src="audio/Your_Hand_In_Mine_Short.mp3" type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>
 </body>  
