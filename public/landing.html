@@ -40,13 +40,18 @@
 		</div>
 	</div>
 </div> <!-- close container -->
-<audio id="audio">
+<audio id="audio" loop="loop">
   <source src="audio/Your_Hand_In_Mine_Short.ogg" type="audio/ogg" />
   <source src="audio/Your_Hand_In_Mine_Short.mp3" type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>
 </body>  
 <footer>	
+	<!-- 			window.setInterval(function() {
+			$('#button').removeClass('active');
+			$('div#switch').text('Play');
+		}, 3000);
+		-->
 	<script>
 	$(function(){
 	    $('#button').click(function() { 
