@@ -10,6 +10,7 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
   <![endif]-->  
 	<script src='snowfall.jquery.js'></script>
+	<script src='airport.js'></script>
 	<script>
 	$(document).ready(function(){
 		$(document).snowfall();
@@ -33,10 +34,10 @@
 		<a id="button-2" href="#"></a>
 	</div>
 	<div style="position: relative; left: 0; top: 0;">
-		<h1><a href="http://tnt.heroku.com/" target="_blank">Tony Ng</a></h1>
-		<h1><a href="http://www.twitter.com/tonynggg" target="_blank">@TonyNggg</a></h1>		
+		<h1><a href="http://tonynggg.posterous.com/" target="_blank">Posterous</a></h1>		
+		<h1><a href="http://www.twitter.com/tonynggg" target="_blank">@TonyNggg</a></h1>	
 		<div class="scroll" style="position: absolute; top: 10px; left: 580px;">
-	<p>Hello!</p>
+			<h2 class="airport"></h2> 
 		</div>
 	</div>
 </div> <!-- close container -->
@@ -66,6 +67,7 @@
 	    });
 	});
 	$(function(){
+		$('h2.airport').airport([ "Hello!", "I'm Tony!", "Say hi!" ]);
 		$('.scroll').hover(function() {
 			$(this).fadeOut(4500);
 		});
